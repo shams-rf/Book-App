@@ -9,19 +9,31 @@
 /* Begin PBXBuildFile section */
 		DBFC5662288B04740020C198 /* Book_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC5652288B04730020C198 /* Book_AppApp.swift */; };
 		DBFC5663288B04740020C198 /* Book_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC5652288B04730020C198 /* Book_AppApp.swift */; };
-		DBFC5664288B04740020C198 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC5653288B04730020C198 /* ContentView.swift */; };
-		DBFC5665288B04740020C198 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC5653288B04730020C198 /* ContentView.swift */; };
+		DBFC5664288B04740020C198 /* BookMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC5653288B04730020C198 /* BookMainView.swift */; };
+		DBFC5665288B04740020C198 /* BookMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC5653288B04730020C198 /* BookMainView.swift */; };
 		DBFC5666288B04740020C198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBFC5654288B04740020C198 /* Assets.xcassets */; };
 		DBFC5667288B04740020C198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBFC5654288B04740020C198 /* Assets.xcassets */; };
+		DBFC5676288B05840020C198 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = DBFC5675288B05840020C198 /* Data.json */; };
+		DBFC5677288B05840020C198 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = DBFC5675288B05840020C198 /* Data.json */; };
+		DBFC5679288B073C0020C198 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC5678288B073C0020C198 /* BookModel.swift */; };
+		DBFC567A288B073C0020C198 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC5678288B073C0020C198 /* BookModel.swift */; };
+		DBFC567C288B07510020C198 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC567B288B07510020C198 /* Book.swift */; };
+		DBFC567D288B07510020C198 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC567B288B07510020C198 /* Book.swift */; };
+		DBFC567F288B07590020C198 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC567E288B07590020C198 /* DataService.swift */; };
+		DBFC5680288B07590020C198 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC567E288B07590020C198 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DBFC5652288B04730020C198 /* Book_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book_AppApp.swift; sourceTree = "<group>"; };
-		DBFC5653288B04730020C198 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DBFC5653288B04730020C198 /* BookMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMainView.swift; sourceTree = "<group>"; };
 		DBFC5654288B04740020C198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBFC5659288B04740020C198 /* Book-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFC565F288B04740020C198 /* Book-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFC5661288B04740020C198 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		DBFC5675288B05840020C198 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Data.json; path = "Data and Assets/Data.json"; sourceTree = SOURCE_ROOT; };
+		DBFC5678288B073C0020C198 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		DBFC567B288B07510020C198 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		DBFC567E288B07590020C198 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				DBFC5652288B04730020C198 /* Book_AppApp.swift */,
-				DBFC5653288B04730020C198 /* ContentView.swift */,
+				DBFC5670288B05450020C198 /* Views */,
+				DBFC5672288B05500020C198 /* Models */,
+				DBFC5671288B054A0020C198 /* ViewModels */,
+				DBFC5673288B05540020C198 /* Services */,
+				DBFC5674288B05590020C198 /* Data */,
 				DBFC5654288B04740020C198 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -76,6 +92,46 @@
 				DBFC5661288B04740020C198 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		DBFC5670288B05450020C198 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBFC5653288B04730020C198 /* BookMainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBFC5671288B054A0020C198 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DBFC5678288B073C0020C198 /* BookModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DBFC5672288B05500020C198 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBFC567B288B07510020C198 /* Book.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DBFC5673288B05540020C198 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DBFC567E288B07590020C198 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DBFC5674288B05590020C198 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DBFC5675288B05840020C198 /* Data.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBFC5666288B04740020C198 /* Assets.xcassets in Resources */,
+				DBFC5676288B05840020C198 /* Data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBFC5667288B04740020C198 /* Assets.xcassets in Resources */,
+				DBFC5677288B05840020C198 /* Data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBFC5664288B04740020C198 /* ContentView.swift in Sources */,
+				DBFC567C288B07510020C198 /* Book.swift in Sources */,
+				DBFC5679288B073C0020C198 /* BookModel.swift in Sources */,
+				DBFC5664288B04740020C198 /* BookMainView.swift in Sources */,
 				DBFC5662288B04740020C198 /* Book_AppApp.swift in Sources */,
+				DBFC567F288B07590020C198 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +246,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBFC5665288B04740020C198 /* ContentView.swift in Sources */,
+				DBFC567D288B07510020C198 /* Book.swift in Sources */,
+				DBFC567A288B073C0020C198 /* BookModel.swift in Sources */,
+				DBFC5665288B04740020C198 /* BookMainView.swift in Sources */,
 				DBFC5663288B04740020C198 /* Book_AppApp.swift in Sources */,
+				DBFC5680288B07590020C198 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
