@@ -14,5 +14,6 @@ class BookModel: ObservableObject {
     init() {
         
         //create instance of DataService and get the data
+        self.books = DataService.getLocalData()
     }
 }

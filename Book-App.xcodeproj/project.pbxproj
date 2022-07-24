@@ -21,6 +21,10 @@
 		DBFC567D288B07510020C198 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC567B288B07510020C198 /* Book.swift */; };
 		DBFC567F288B07590020C198 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC567E288B07590020C198 /* DataService.swift */; };
 		DBFC5680288B07590020C198 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC567E288B07590020C198 /* DataService.swift */; };
+		DBFC5682288B0E700020C198 /* BookReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC5681288B0E700020C198 /* BookReadView.swift */; };
+		DBFC5683288B0E700020C198 /* BookReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC5681288B0E700020C198 /* BookReadView.swift */; };
+		DBFC5685288B10360020C198 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC5684288B10360020C198 /* BookDetailView.swift */; };
+		DBFC5686288B10360020C198 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC5684288B10360020C198 /* BookDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,8 @@
 		DBFC5678288B073C0020C198 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		DBFC567B288B07510020C198 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		DBFC567E288B07590020C198 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		DBFC5681288B0E700020C198 /* BookReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReadView.swift; sourceTree = "<group>"; };
+		DBFC5684288B10360020C198 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				DBFC5653288B04730020C198 /* BookMainView.swift */,
+				DBFC5684288B10360020C198 /* BookDetailView.swift */,
+				DBFC5681288B0E700020C198 /* BookReadView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,10 +243,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBFC567C288B07510020C198 /* Book.swift in Sources */,
+				DBFC5682288B0E700020C198 /* BookReadView.swift in Sources */,
 				DBFC5679288B073C0020C198 /* BookModel.swift in Sources */,
 				DBFC5664288B04740020C198 /* BookMainView.swift in Sources */,
 				DBFC5662288B04740020C198 /* Book_AppApp.swift in Sources */,
 				DBFC567F288B07590020C198 /* DataService.swift in Sources */,
+				DBFC5685288B10360020C198 /* BookDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,10 +257,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBFC567D288B07510020C198 /* Book.swift in Sources */,
+				DBFC5683288B0E700020C198 /* BookReadView.swift in Sources */,
 				DBFC567A288B073C0020C198 /* BookModel.swift in Sources */,
 				DBFC5665288B04740020C198 /* BookMainView.swift in Sources */,
 				DBFC5663288B04740020C198 /* Book_AppApp.swift in Sources */,
 				DBFC5680288B07590020C198 /* DataService.swift in Sources */,
+				DBFC5686288B10360020C198 /* BookDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
