@@ -14,31 +14,44 @@ struct BookDetailView: View {
     var book:Book
     
     @State var rating = 1
+    @State var starIcon = "star"
+    @State var isFavourite = false
     
     var body: some View {
         
-        VStack {
+        NavigationView {
             
-            Text("Amazing Words")
-                .bold()
-                .font(.largeTitle)
-                .padding()
-            
-            VStack (spacing: 30) {
+            VStack {
                 
-                Text("Read Now!")
-                    .font(.title2)
-                
-                Image("cover1")
-                    .resizable()
-                    .scaledToFit()
+                NavigationLink (destination: {
+                    
+                    BookReadView(book: book)
+                }, label: {
+                    
+                    VStack {
+                        
+                        Text("Read Now!")
+                            .font(.title2)
+                            .foregroundColor(.black)
+                        
+                        Image("cover\(book.id)")
+                            .resizable()
+                            .scaledToFit()
+                    }
+                    .padding()
+                })
                 
                 Text("Mark for later!")
                     .font(.headline)
                 
-                Image(systemName: "star.fill")
+                Toggle(isOn: $isFavourite, label: {
+                    
+                    Image(systemName: "star")
+                })
+                .toggleStyle(.button)
+                .foregroundColor(.yellow)
                 
-                Text("Rate Amazing Words")
+                Text("Rate \(book.title)")
                     .font(.headline)
                 
                 Picker("", selection: $rating) {
@@ -52,6 +65,8 @@ struct BookDetailView: View {
                 .padding()
                 .frame(width: 300)
             }
+            .padding()
+            .navigationTitle(book.title)
         }
     }
 }

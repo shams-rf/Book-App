@@ -8,13 +8,32 @@
 import SwiftUI
 
 struct BookReadView: View {
+    
+    var book:Book
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            
+            ForEach (0..<book.content.count, id:\.self) { index in
+                
+                VStack {
+                    
+                    Text(book.content[index])
+                        .padding()
+                    
+                    Text(String(index+1))
+                }
+            }
+        }
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
     }
 }
 
 struct BookReadView_Previews: PreviewProvider {
     static var previews: some View {
-        BookReadView()
+        
+        let model = BookModel()
+        
+        BookReadView(book: model.books[0])
     }
 }
